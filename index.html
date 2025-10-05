@@ -2,27 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Excercise 0.1-0.3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Energy Consumption Data Story - PowerHub</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/scripts.js"></script>
 </head>
 <body>
- <header>
-  <div class="header-container">
-    <img src="images/PowerIcon.png" id="logo" alt="Power Logo" />
-    <nav>
-      <ul>
-        <li><a href="#" id="nav-home" class="nav-link">Home</a></li>
-        <li><a href="#" id="nav-televisions" class="nav-link">Televisions</a></li>
-        <li><a href="#" id="nav-about" class="nav-link">About Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-  <main id="content"></main>
+  <!-- Skip to main content for accessibility -->
+  <a href="#content" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <div class="header-container">
+      <img src="images/PowerIcon.png" id="logo" alt="PowerHub Logo" />
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#" id="nav-home" class="nav-link">Home</a></li>
+          <li><a href="#" id="nav-televisions" class="nav-link">Televisions</a></li>
+          <li><a href="#" id="nav-about" class="nav-link">About Us</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" role="main"></main>
+  
   <footer>
-    &copy; 2025 Dong Nguyen Gia Huy. This code was created with help from GitHub Copilot.
+    <div class="footer-content">
+      <p>&copy; 2025 Dong Nguyen Gia Huy (104993450) - COS30045 Data Visualisation Project</p>
+      <p>This code was created with help from GitHub Copilot.</p>
+    </div>
   </footer>
+  
   <script>
     window.onload = () => showPage('home');
   </script>
